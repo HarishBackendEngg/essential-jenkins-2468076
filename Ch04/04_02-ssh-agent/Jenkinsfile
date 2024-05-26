@@ -9,7 +9,8 @@ pipeline {
                 sh 'mvn --version'
                 sh 'git --version'
                 git branch: 'main',
-                    url: 'https://github.com/LinkedInLearning/essential-jenkins-2468076.git'
+                    url: 'https://github.com/HarishBackendEngg/essential-jenkins-2468076.git',
+                    credentialsId: '97efe945-5156-4eed-b65b-d3cc36a7224e'    
             }
         }
         stage('Clean') {
